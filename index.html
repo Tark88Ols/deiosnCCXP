@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CCXP23</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="img/ccxp.svg" alt="">
+        </figure>
+    </header>
+    <main class="container">
+        <div id="textoPadrao" class="center">
+            <h1>REVIVA O ÉPICO</h1>
+            <h3>DE 01 A 04 DE DEZEMBRO</h3>
+            <p>Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: "estamos em casa". Sim, em
+                dezembro de 2022, teremos a volta da CCXP física. Mas não será qualquer CCXP, vai ser a maior de todos
+                os tempos. Prepare-se para visitar seus universos favoritos, explorar o Artists' Valley, se emocionar
+                nos auditórios e encontrar aventuras épicas a cada passo pelos nossos corredores.</p>
+        </div>
+        <div id="time" class="center">
+            <ul>
+                <li id="dia"></li>
+                <li id="hora"></li>
+                <li id="minuto"></li>
+                <li id="segundo"></li>
+            </ul>
+            <h3>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h3>
+            <video autoplay loop muted>
+                <source src="img/Arlequina.mp4" type="video/mp4">
+            </video>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
+            <figure>
+                <img id="bannerQuinta" src="img/quinta.svg" alt="Ingresso Quinta"
+                    onmouseover="cardZoom('#bannerQuinta')" onmouseout="cardZoom('#bannerQuinta')">
+                <img id="bannerSexta" src="img/sexta.svg" alt="Ingresso Sexta" onmouseover="cardZoom('#bannerSexta')"
+                    onmouseout="cardZoom('#bannerSexta')">
+                <img id="bannerSabado" src="img/sabado.svg" alt="Ingresso Sábado"
+                    onmouseover="cardZoom('#bannerSabado')" onmouseout="cardZoom('#bannerSabado')">
+                <img id="bannerDomingo" src="img/domingo.svg" alt="Ingresso Domingo"
+                    onmouseover="cardZoom('#bannerDomingo')" onmouseout="cardZoom('#bannerDomingo')">
+            </figure>
+        </div>
+        <div id="button">
+            <button>GARANTA O SEU</button>
+        </div>
+        <div class="hide fade"></div>
+        <div class="hide modal">
+            <div class="modalHeader">
+                <h3>Calendario Quinta-Feira</h3>
+                <button class="closeModal">Fechar</button>
+            </div>
+            <div class="modalBory">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas at facilis unde ut porro
+                    delectus harum odio quis, atque quod. Impedit accusamus quis provident fuga dolorem officiis cumque
+                    sed.</p>
+            </div>
+        </div>
+
+        <div class="hideSext fadeSexta"></div>
+        <div class="hideSext modalSexta">
+            <div class="modalHeader">
+                <h3>Calendario Sexta-Feira</h3>
+                <button class="closeModalSexta">Fechar</button>
+            </div>
+            <div class="modalBory">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas at facilis unde ut porro
+                    delectus harum odio quis, atque quod. Impedit accusamus quis provident fuga dolorem officiis cumque
+                    sed.</p>
+            </div>
+        </div>
+
+        <div class="hideSab fadeSab"></div>
+        <div class="hideSab modalSab">
+            <div class="modalHeader">
+                <h3>Lista de espera Evento Sabado</h3>
+
+                <button class="closeModalSab">Fechar</button>
+            </div>
+            <div class="modalBorySab">
+                <p>Me avise caso abrir segundo Lote!</p><br>
+                <input type="text" placeholder="E-mail">
+
+                <input id="enviarSab" type="submit">
+            </div>
+        </div>
+
+        <div class="hideDom fadeDom"></div>
+        <div class="hideDom modalDom">
+            <div class="modalHeader">
+                <h3>Calendario Domingo</h3>
+                <button class="closeModalDom">Fechar</button>
+            </div>
+            <div class="modalBory">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptas at facilis unde ut porro
+                    delectus harum odio quis, atque quod. Impedit accusamus quis provident fuga dolorem officiis cumque
+                    sed.</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="scritp.js"></script>
+</body>
+
+</html>
